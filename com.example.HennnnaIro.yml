@@ -16,6 +16,6 @@ modules:
       - -Dlibdir=/app/lib
     sources:
       - type: git
-        url: https://github.com/yourname/HennnnaIro.git
+        url: https://github.com/ponzu840w/HennnnaIro.git
         tag: v0.1
 
