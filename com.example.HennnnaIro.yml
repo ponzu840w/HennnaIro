@@ -1,0 +1,21 @@
+app-id: com.example.HennnnaIro
+runtime: org.gnome.Platform
+runtime-version: '43'    # or '42', '44' 等
+sdk: org.gnome.Sdk
+command: hennnnairo
+
+finish-args:
+  - --share=network
+  - --filesystem=home
+
+modules:
+  - name: hennnnairo
+    buildsystem: meson
+    config-opts:
+      - -Dprefix=/app
+      - -Dlibdir=/app/lib
+    sources:
+      - type: git
+        url: https://github.com/yourname/HennnnaIro.git
+        tag: v0.1
+
